@@ -1,0 +1,31 @@
+Domínio 
+
+Domínio é o endereço de um site na web, como se fosse o endereço de uma casa (CEP). A parte final do domínio, por exemplo: 
+br, com, org, define o tipo do domínio. Se terminar com BR, estamos falando do país Brasil, caso o final seja sem COM, é um site comercial, de uma empresa. 
+Mas também tem a possibilidade de acabar com ORG, que significa uma instituição ou algo de natureza organizacional, por exemplo o site do Governo Federal. 
+
+Existem os subdomínios, imagine a seguinte url: “alura.com.br”. O BR está especificando a origem do site e o COM diz que é um endereço comercial, ou seja, 
+é um site comercial que se localiza no Brasil. 
+Os domínios são como apelidos, pois estes não são os verdadeiros nomes dos sites que você busca. 
+Para o seu computador entender para quem tem que ir, ele precisa do IP do servidor ou computador das maquinas em que a aplicação está hospedada. 
+
+O verdadeiro nome do Google é 172.217.29.68. Na hora em que você digita alguma URL, o seu computador vai pegar o domínio escrito e mandar para o DNS. 
+DNS funciona como um grande banco de dados com nomes de sites. Um exemplo, chega para o DNS uma requisição com o seguinte texto “google.com.br”, 
+ele vai no “banco” e procura qual o IP corresponde a esse nome, no caso é 172.217.29.68 e redireciona você para o endereço. 
+
+Portas 
+
+Porta de um computador ou de um servidor é algo bem simples de se entender, supondo que você more em um prédio, quando alguém for te visitar, 
+é necessário informar o número de seu apartamento. É a mesma coisa com servidores e PCs, quando você acessa um site, 
+ele já tem definido por qual porta ele vai receber conexões, por isso ao digitar uma URL, 
+você pode escolher por qual porta você deseja se conectar.
+Na URL “alura.com.br:80” eu estou acessando o server pela porta 80, este número é o padrão do protocolo HTTP, e do HTTPS o padrão é 443. 
+
+Caso você deseje acessar uma porta que não esteja aberta, mostrará que não é possível se conectar, pois ela não está programada para isso. 
+É mesma coisa que passar o número errado de seu apartamento, a visita irá se deparar com uma “porta” que não está programada para aceitá-la. 
+
+Recursos
+
+Na hora de acessar um site, há a possibilidade de ser mais específico. É assim que o recurso funcione, caso eu queria acessar meu perfil no Facebook, 
+posso colocar da seguinte forma https://www.facebook.com/murilo.dutra.18, perceba que no final está escrito murilo.dutra.18, isso é um recurso, 
+estou acessando diretamente o meu perfil.

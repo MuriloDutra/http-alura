@@ -1,0 +1,5 @@
+REST
+
+Rest é trabalhar com a WEB da maneira que ela específica, usando estrutura e métodos do HTTP (GET, POST, PUT, PATCH, DELETE). 
+É serviço feito pela web que pode mandar dados das seguintes formas: JSON, XML, HTML.
+Para especificar qual tipo você deseja, deve-se colocar alguns dos cabeçalhos a seguir: Accept/Content-Type, deixando explicito o tipo: (JSON, XML, HTML e outros).

@@ -1,0 +1,27 @@
+GET
+
+O método GET serve para receber dados e através disso fazer consultas, inclusão e etc.  
+A desvantagem desse método é que as informações aparecem na URL do navegador, portanto em um ato de logar em um site, 
+a URL ficaria assim https://www.alura.com.br/?email=murilo@gmail.com&senha=murilo123.
+
+O “?” antes do e-mail significa que enviaremos parâmetros pela URL, então vem o “?” e depois o nome do campo, no caso é “e-mail”. 
+O “&” é usado quando se necessita passar dois parâmetros. 
+Então a cada novo parâmetro, se deve pôr “?”, o nome do campo e seu valor depois do “=”. 
+E caso queira passar mais parâmetros, apenas coloque um “&” depois do último parâmetro e assim por diante.  
+
+POST
+
+O método POST é usado para mandar algo para o servidor, mas a vantagem dele é que os valores não aparecem na URL, 
+portanto mais seguro, os valores permanecem dentro da requisição. 
+
+DELETE 
+
+É para deletar um recurso.
+
+PUT
+
+É para atualizar um recurso.
+
+PATCH
+
+Também atualiza um recurso, só que não inteiro, apenas uma parte dele. Se trata de uma atualização mais específica. 

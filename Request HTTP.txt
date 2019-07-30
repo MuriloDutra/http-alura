@@ -1,0 +1,27 @@
+Requisições do HTTP
+Ao pesquisar uma URL no navegador, acontece várias requisições, não apenas uma. O HTML não traz tudo sozinho, 
+por isso arquivos do tipo CSS, JavaScript, Imagens e outros, também são requeridos.
+
+GET
+Método GET é para requisição, quando você pede algo, uma página por exemplo, o pedido vai para o servidor do site.
+
+Códigos
+
+Todo os códigos da família 200, ou seja, que começarem com 2, são códigos de sucesso. A requisição deu certo 
+200: quando a requisição, resposta e carregamento dão tudo certo. A página carregou corretamente.
+
+
+Todo os códigos da família 300, ou seja, que começarem com 3, são códigos de redirecionamento.
+301: para ser redirecionado para outra página. Exemplo: se a URL for HTTP://www.alura.com.br, 
+o servidor redireciona com a URL segura, usando HTTPS://www.alura.com.br. 
+
+
+Todo os códigos da família 400, ou seja, que começarem com 4, são códigos de erro que aconteceram por causa do cliente. 
+Provavelmente por causa de uma requisição errada. 
+404: esse código aparece quando se é requisitado uma informação inválida.  
+
+
+Todo os códigos da família 500, ou seja, que começarem com 5, são códigos de erro que aconteceram por causa da aplicação, 
+não foi erro do cliente e sim do programa.
+500: erro no processamento, o cliente não tem culpa do erro. Definindo, foi um erro interno da aplicação. 
+

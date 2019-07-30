@@ -1,0 +1,17 @@
+Definição de protocolo: é um conjunto de regras, relacionado a algo, no nosso caso, informática.
+HTTP é um protocolo, nada mais que um conjunto de regras de comunicação, entre cliente e servidor. 
+Como se fosse o português, para alguém se comunicar comigo precisa falar português, se não, não entenderei.
+
+O cliente poderia ser um navegador (Chrome, edge, opera, Mozilla Firefox) e o servidor pode ser o do Facebook, por exemplo,
+quando você troca dados com o servidor, através um login, postagem, curtida, mensagem, o seu navegador manda isso para o servidor do facebook, 
+que pode responder ou não, depende da situação.
+ 
+O importante é frisar que essa comunicação entre os dois, navegador e servidor, tem muitas regras e que ambas as partes as entendem, 
+o “idioma” que os dois entendem é o protocolo HTTP.
+
+O HTTP não é o único protocolo que existe, há outros, por exemplo o P2P. Peer-To-Peer ou P2P, é uma forma de dividir um pouco do trabalho, 
+o servidor não faz tudo sozinho, o cliente também faz algumas tarefas. 
+
+Isso é bom, pois caso haja um volume muito grande de tarefas a serem feitas, o servidor não gargala, pois está dividindo as tarefas com os clientes. 
+Um exemplo, imagine que um servidor precise ver cada letra de vinte palavras, isso pode ser feito rapidamente, mas se fosse um milhão de palavras? 
+Por isso é interessante dividir um pouco das tarefas com os clientes.

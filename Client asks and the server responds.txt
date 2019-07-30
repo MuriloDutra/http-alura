@@ -1,0 +1,17 @@
+Requisição e resposta
+
+O protocolo HTTP segue o modelo “requisição-resposta”, ao tentar acessar um site você está criando uma requisição, requerendo, pedindo o acesso: 
+“ Posso acessar sua página? ”, e o servidor responde mandando a página, para abrir no seu navegador.
+
+A cada requisição, todas suas informações são mandadas novamente. Ou seja, ao fazer a primeira requisição, o HTTP não guarda essas informações, de login por exemplo. 
+Então quando for fazer a segunda requisição, terá que mandar todas suas informações novamente.
+HTTP é stateless, não mantém informações. 
+
+Sessão
+
+Como o HTTP não guarda informações, então para manter o controle num processo de login, por exemplo, 
+é preciso guardar as informações em algum lugar, é aí que as sessões surgem. Ao logar em uma rede social, 
+o servidor manda para seu navegador uma espécie de senha, mais conhecido também como Cookie, que só você terá enquanto estiver logado. 
+
+Isso é necessário, porque caso não existisse, a cada perfil de um amigo que você entra, seria necessário logar novamente, para comprovar que é você, 
+mas como temos a ferramenta de sessão, o servidor já sabe que está logado e não precisa fazer a verificação novamente. 

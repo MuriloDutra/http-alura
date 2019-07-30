@@ -1,0 +1,42 @@
+HTTP 2
+
+A partir da versão 2 do HTTP, resposta é comprimida, independentemente do tipo: HTML, XML e outros. 
+Todas são compridas para binário através de um algoritmo presente no protocolo, chamado GZIP. 
+Ele faz isso para tornar o trafego de informações mais eficiente, sem serem grandes, pois estão comprimidos, ajuda no trafego para celulares. 
+Antes era texto puro, ser binário torna mais otimizado o processo. 
+
+Além do GZIP, há outro algoritmo para comprimir os dados dos Headers, HPACK como é conhecido, tornando ainda mais leve os dados. 
+E o HTTP 2, por padrão, criptografa as informações. Portanto o HTTP 2 é eficiente e seguro. 
+
+Headers Stateful
+
+Toda requisição tem um header (cabeçalho), com as seguintes informações: host (para onde desejo ir), 
+User-Agent (quem está chamando, chrome, mozillla e outros), Accept (é o que ele aceita, HTML, XML e outros). 
+
+Caso você faça uma nova requisição, que não precise mudar o cabeçalho, o mesmo não será enviado de novo, esse conceito é chamado de Header Stateful, 
+quando o cabeçalho se mantém o mesmo e não é enviado novamente. Isso acaba economizando dados, o que é bom. 
+
+Server push
+
+Vamos supor que você irá entrar em um site HTML que possua imagens, css, Java Script, agora que já temos esse cenário, vamos a explicação. 
+No primeiro HTTP, os processos de requisição eram feitos dessa maneira: você requisitava a página HTML e o servidor a mandava, mas ela tem mais arquivos, certo ?! 
+Css, Java Script e outros. 
+
+Então o cliente ao interpretar o código, percebia que se era necessária uma imagem, assim fazia uma nova requisição, se tivesse um css, também era feito uma nova chamada. 
+Com o HTTP 2 isso mudou, ao chamar a página HTML, o servidor manda o arquivo requisitado e todos os outros que serão necessários, isso é chamado de Server Push, 
+o cliente recebe dados que não foram pedidos, mas serão usados no futuro. E quando o browse interpretar o HTML, verá que é necessário um css, por exemplo, 
+assim que ele notar isso, tentará fazer uma requisição, mas notará que já possui esse arquivo. 
+
+Keep-Alive
+
+Ao fazer vários pedido/requisição ao servidor, antes do pedido ser enviado, é feito uma conexão do cliente com o servidor, 
+quando essa conexão é feita envia-se a primeira requisição e a conexão dos dois fecha, é feito dessa maneira com cada requisição. 
+
+Isso que acabei de descrever era feito no primeiro HTTP, mas na segunda versão a conexão se mantém aberta, 
+o motivo é que para criar esse caminho/conexão custa tempo e dinheiro. 
+Portanto mantê-la aberta é mais vantajoso, sendo mais eficiente e barato, só sendo fechada quando acabar as requisições.    
+
+Multiplexing ou multiplexação 
+
+Esse conceito é bem simples, supondo que você queira fazer várias requisições, ao enviar uma, não precisa esperar a resposta para enviar a segunda, 
+se fosse assim demoraria muito. Por fim, basta mandar várias requisições e o servidor lida com elas, a medida que a resposta estiver pronta, ele as manda.

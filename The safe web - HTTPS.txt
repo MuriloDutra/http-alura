@@ -1,0 +1,33 @@
+HTTPS 
+
+O protocolo HTTP transmite dados entre cliente e servidor, como já foi dito, ao transmitir esses dados eles vão de forma “pura”, por exemplo, 
+ao logar em uma rede social, seriam transmitidos de forma textual o seu e-mail: cc@gmail.com e senha:12345, 
+e para essa informação chegar até o servidor requisitado, ela navega por muitos outros lugares, seu roteador, seu provedor de internet e etc. 
+E o risco disso é grande, alguém pode interceptar essas informações no caminho e usá-las de forma incorreta, pra resolver isso foi adicionado ao HTTP, 
+a SSL/TLS, isso faz com que essa troca de dados seja segura e não “pura” como eram antigamente. Agora a sigla HTTP ganhou um S no final, 
+que representa a implementação do SSL/TLS no protocolo, fincando HTTPS.
+
+Certificado digital, chave pública e chave privada
+
+Uma das maneiras de saber se um site é seguro ou não, é ver se ele possui certificado digital, que visualmente é representado por um cadeado na URL do navegador. 
+Certificado digital é emitido por uma empresa certificadora, existem várias, dizendo se seu site é seguro ou não para acessar.
+
+Os navegadores também só confiam em algumas empresas certificadoras, caso apareça uma empresa qualquer dizendo que tal site é seguro, 
+o seu navegador vai refutar isso, dizendo que não conhece aquela empresa, por isso não confia no que ela diz.
+
+Cada certificado possui uma chave pública, presente no site e usada para criptografar informações quando forem enviadas, 
+e a chave privada presente no servidor para desencriptografar as informações que serão recebidas. 
+Isso torna o processo de troca de dados mais seguro, porque caso a informação seja interceptada no caminho, 
+ela não poderá ser usada para nada, pois o interceptador não possui a chave privada.
+
+Chave simétrica 
+
+O método da chave simétrica utiliza a mesma chave que criptografa a informação para desencriptografar, isso torna o processo muito mais rápido, 
+e por que não utilizamos esse método? Já que ele é mais ágil. 
+Porque ele não é tão seguro, caso alguém tenha acesso a essa chave simétrica, pode muito bem pegar os dados e ter acesso a seus conteúdos, 
+por isso utilizamos o método de chave pública e privada.
+
+Porém mesmo assim, o cliente também gera uma chave simétrica, mas calma, você não está doido. Por que o cliente gera essa chave? Ela é insegura. 
+Vamos lá, quando o cliente se conecta com o servidor pela primeira vez, ambos utilizam o método de chaves pública e privada, 
+e o cliente gera uma terceira chave, a simétrica, e a manda para o servidor utilizando o primeiro método. 
+Assim, na próxima vez se comunicarem, ambos terão a chave simétrica, tornando a troca de dados mais rápida.  
